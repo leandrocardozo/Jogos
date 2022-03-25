@@ -116,3 +116,4 @@ while True:
         print('\033[37:3mO relatório de todos jogos estão no arquivo megasena_jogos.txt')
         print('Programa de apostas finalizado!')
         break
+        
