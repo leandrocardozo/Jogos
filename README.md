@@ -1,1 +1,1 @@
-Repositório destinado a desenvolvimento de jogos.
+Repositório destinado a desenvolvimento de jogos e programas simples.
