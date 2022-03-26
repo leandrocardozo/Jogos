@@ -1,2 +1,1 @@
-# Jogos
-Repositório para desenvolvimento de jogos.
+Repositório destinado a desenvolvimento de jogos.
