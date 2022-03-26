@@ -1,6 +1,4 @@
-
-
-def LeiaInt(msg):
+def leia_int(msg):
     """
     Função que verifica se o input do usuário é do tipo inteiro.
     :param msg: Uma mensagem que será exibida ao usuário pedindo um
@@ -28,7 +26,7 @@ while True:
     print('-----------------')
 
 
-    qnt_jogos = LeiaInt('Quantidade JOGOS: ')
+    qnt_jogos = leia_int('Quantidade JOGOS: ')
     while True:
 
         qnt_num = str(input('Quantidade NÚMEROS: '))
@@ -100,7 +98,7 @@ while True:
         print('\nAposta encerrada!')
 
 
-
+    ## Pergunta ao usuário se ele deseja efetuar mais jogos
     while True:
         option = str(input('Deseja fazer mais jogos? [S/N]')).upper()
         if option not in 'SN':
