@@ -17,6 +17,9 @@ def leia_int(msg):
 from random import randint
 from time import sleep
 
+
+lista_valor = []
+
 # While principal que executa todo o programa mais de uma vez caso o usuário queira.
 while True:
 
@@ -40,25 +43,45 @@ while True:
         # Estrutura condicional que verifica o valor das apostas.
         # - Variável (qnt_num) é atribuida a quantidade de números que o usuário escolheu para o seu jogo.
         if int(qnt_num) == 6:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 4.50:.2f}\033[m')
+            valor_tot = qnt_jogos * 4.50
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 7:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 31.50:.2f}\033[m')
+            valor_tot = qnt_jogos * 31.50
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 8:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 126.00:.2f}\033[m')
+            valor_tot = qnt_jogos * 126.00
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 9:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 378.00:.2f}\033[m')
+            valor_tot = qnt_jogos * 378.00
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 10:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 945.00:.2f}\033[m')
+            valor_tot = qnt_jogos * 945.00
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 11:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 2.079:.2f}\033[m')
+            valor_tot = qnt_jogos * 2.079
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 12:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 4.158:.2f}\033[m')
+            valor_tot = qnt_jogos * 4.158
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 13:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 7.722:.2f}\033[m')
+            valor_tot = qnt_jogos * 7.722
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 14:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 13.513:.2f}\033[m')
+            valor_tot = qnt_jogos * 13.513
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.2f}\033[m')
+            lista_valor.append(valor_tot)
         if int(qnt_num) == 15:
-            print(f'\033[36mO valor total da sua aposta é: \033[m \033[31:1mR$ {qnt_jogos * 22.522:.3f}\033[m')
+            valor_tot = qnt_jogos * 22.522
+            print(f'\033[35mO valor total da sua aposta é: \033[m \033[33:1mR$ {valor_tot:.3f}\033[m')
+            lista_valor.append(valor_tot)
 
 
         # Verifica o intervalo válido da quantidade de números permitidos na Mega Sena.
@@ -111,6 +134,7 @@ while True:
         continue
     else:
         print('\n-------------------------------')
+        print(f'\033[36mTotal a pagar: \033[m \033[31:1mR$ {sum(lista_valor):.2f}\033[m')
         print('\033[37:3mO relatório de todos jogos estão no arquivo megasena_jogos.txt')
         print('Programa de apostas finalizado!')
         break
